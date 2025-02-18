@@ -8,13 +8,13 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <script>
-        async function getAnimalData() {
-            const response = await fetch("https://fakerapi.it/api/v1/persons");
-            const data = await response.json();
-            console.log(data);
-        }
-    </script>
-    <button onclick="getAnimalData()">Get Animal Data</button>
+    <form id="loginForm" action="/login" method="POST">
+        First Name: <input type="text" name="fname" value="Donald"><br>
+        Last Name: <input type="text" name="lname" value="Duck"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <p>Click the "Try it" button to display the number of elements in the form.</p>
+    <button onclick="myFunction()">Try it</button>
+    <p id="displaySpace"></p>
 </body>
 </html>
